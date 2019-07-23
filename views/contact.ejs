@@ -1,0 +1,29 @@
+
+ <% include partials/header.ejs %> 
+
+
+ <header>
+         <h1>
+            <%= user %>
+         
+          </h1>  
+           <p id="job">
+            My job title is <%= job %>
+            </p>
+          <hr />
+          <nav>
+            
+              <a href ="/"> Home</a>
+              <a href ="/about"> About</a>
+              <a id = "current" href ="/contact">Contact</a>
+          </nav>
+          <br /><br />
+          
+      <!-- div with an id called content -->
+          <div id = "content">
+             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejm6Kcfmkfvab3aavO3YmoOUtvGm1Nx0USiyPRAXlt76Y99A/viewform?embedded=true" width="640" height="1016" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+      
+      </header>
+   
+   <% include partials/footer %>
