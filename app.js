@@ -16,11 +16,11 @@ app.get("/grayhat", function(req, res){
 });
 
 app.get("/blackhat", function(req, res){
-  res.render("blackhat.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
+  res.render("blackhat.ejs", {"user": faker.name.findName(), "job": faker.internet.email()});
 });
 
 app.get("/whitehat", function(req, res){
-  res.render("whitehat.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
+  res.render("whitehat.ejs", {"user": faker.name.findName(), "job": faker.internet.email()});
 });
 
 //server listener
