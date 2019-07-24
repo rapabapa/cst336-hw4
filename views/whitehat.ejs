@@ -1,0 +1,42 @@
+
+       <% include partials/header.ejs %>
+      <header>
+        <h1>
+          White Hat hackers
+          </h1>
+        <div class="dropdown" style="float:right;">
+          <button class = "dropbtn">Menu</button>
+          <div class = "dropdown-content">
+            <a href="/"> Main</a>
+            <a href="/whitehat"> White Hat</a>
+            <a href="/blackhat"> Black Hat</a>
+            <a href="/grayhat"> Gray Hat</a>
+          </div>
+         
+          </div>
+          <p id="job">
+            My email address is <%= job %> <br> and my name is <%= user %>
+            </p>  
+      </header>
+  
+   
+      <main class ="whitehat">
+            <p>
+              What is <strong>White hat hackers</strong>, They are what you call
+              cyber seucirty specilist. <br />
+              They are the people that defend againts hacker.  They utilize their skills by
+              hacking server to expose vulnerabilities before hackers take action.
+              
+            </p>
+          
+            <img src="img/white.jpg" alt="white hat" class="whiteimage">
+          
+            
+        
+          </main>
+      
+    
+<% include partials/footer %>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->

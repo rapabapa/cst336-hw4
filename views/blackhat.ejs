@@ -1,0 +1,40 @@
+
+ <% include partials/header.ejs %> 
+
+
+ <header>
+        <h1 class="wfont">
+          Black Hat Hackers
+            </h1>
+        <div class="dropdown" style="float:right;">
+          <button class = "dropbtn">Menu</button>
+          <div class = "dropdown-content">
+            <a href="/"> Main</a>
+            <a href="/whitehat"> White Hat</a>
+            <a href="/blackhat"> Black Hat</a>
+            <a href="/grayhat"> Gray Hat</a>
+          </div>
+          
+          </div>
+          <p id="job">
+            My email address is <%= job %> <br> and my name is <%= user %>
+            </p>  
+      </header>
+      <br /> <br />
+      <main class="blackhat">
+            <p class="bfont">
+              What is <strong>black hat hackers</strong>, They are the people
+              that will attack your system to steal or cause infection to your
+              computer. <br />
+              They are well knowledge about breaking into computers network and 
+              bypass security protocols.  They also create malware to infect computers
+              to gain access to systems. <br />
+              <strong>Black hat hackers</strong> can be anyone even next door neighbor.
+              Black hat hackers will not just steal your data, but they will also
+              destroy data or modify them.
+            </p>
+          
+            <img src="img/black.jpg" alt="black hat" class="blackimage">
+          </main> 
+   
+   <% include partials/footer %>

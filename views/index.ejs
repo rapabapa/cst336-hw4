@@ -1,45 +1,53 @@
  <% include partials/header.ejs %> 
 
 
- <header>
-         <h1>
-            <%= user %>
+  <header>
+        <h1>
+          Type of hackers
+          </h1>
+        <div class="dropdown" style="float:right;">
+          <button class = "dropbtn">Menu</button>
+          <div class = "dropdown-content">
+            <a href="/"> Main</a>
+            <a href="/whitehat"> White Hat</a>
+            <a href="/blackhat"> Black Hat</a>
+            <a href="/grayhat"> Gray Hat</a>
+          </div>
          
-          </h1>  
-           <p id="job">
-            My job title is <%= job %>
-            </p>
-          <hr />
-          <nav>
-              <a id = "current" href ="/"> Home</a>
-              <a href ="/about"> About</a>
-              <a href ="/contact">Contact</a>
-          </nav>
-          <br /><br />
-          <div>
-       
-  </div>
-          <main>
+          </div>
           
-            <figure>
-                <img src="img/DragonBall.PNG" alt = "Picture of What I like." />
-            </figure>
-            <div>
-                Hello! <br />
-                  <p>
-                    Thank you for visiting my professional portfolio website.
-                  </p>
-                  <p>
-                    I am a Computer Science Major.
-                  </p>
-                  <p>
-                    Feel free to contact Me!
-                  </p>
-                  <br /><br />
-                  <em>"With ordinary talent and extraordinary <strong>perservation</strong>,
-              all things are attainable"</em><br />
-                  - Thamos F. Buxton
-            </div>
-          </main>
       </header>
+     <br /> <br />
+      <main>
+            <p>
+              There are many <strong>hackers</strong> type out there. <br />
+              In this page, I will explain about 3 types of hackers.
+            </p>
+            <a class="link" href="https://us.norton.com/internetsecurity-emerging-threats-what-is-the-difference-between-black-white-and-grey-hat-hackers.html">
+              hackers resources</a>
+        <br /> <br />
+       <div class="row">
+          <div class="container">
+            <img src="img/whitehat.jpg" alt="white hat" class="image">
+            <div class="overlay">
+              <div class="text"> White hat hacker</div>
+            </div>
+         </div>
+         <div class="container">
+            <img src="img/blackhat.jpg" alt="white hat" class="image">
+            <div class="overlay">
+              <div class="text"> black hat hacker</div>
+            </div>
+         </div>
+         
+          <div class="container">
+            <img src="img/grayhat.jpg" alt="white hat" class="image">
+            <div class="overlay">
+              <div class="text"> gray hat hacker</div>
+            </div>
+         </div>
+        </div>
+             
+          </main>
+      
   <% include partials/footer %>

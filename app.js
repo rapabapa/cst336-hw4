@@ -11,12 +11,16 @@ app.get("/", function(req, res) {
 });
 
 
-app.get("/about", function(req, res){
-  res.render("about.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
+app.get("/grayhat", function(req, res){
+  res.render("grayhat.ejs", {"user": faker.name.findName(), "job": faker.internet.email()});
 });
 
-app.get("/contact", function(req, res){
-  res.render("contact.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
+app.get("/blackhat", function(req, res){
+  res.render("blackhat.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
+});
+
+app.get("/whitehat", function(req, res){
+  res.render("whitehat.ejs", {"user": faker.name.findName(), "job": faker.name.jobType()});
 });
 
 //server listener

@@ -1,0 +1,40 @@
+
+       <% include partials/header.ejs %>
+
+<header>
+        <h1 class="wfont">
+          Gray Hat Hackers
+          
+          </h1>
+        <div class="dropdown" style="float:right;">
+          <button class = "dropbtn">Menu</button>
+          <div class = "dropdown-content">
+            <a href="/"> Main</a>
+            <a href="/whitehat"> White Hat</a>
+            <a href="/blackhat"> Black Hat</a>
+            <a href="/grayhat"> Gray Hat</a>
+          </div>
+        
+          </div>
+             <p id="job">
+            My email address is <%= job %> <br> and my name is <%= user %>
+            </p>        
+
+      </header>
+ 
+      <main class="grayhat">
+            <p class="wfont">
+              What is <strong>Gray hat hackers</strong>, They are the people
+              that neighter black or white. They can break into system for fun, or 
+              they can break into system and report to system administrator of the flaws<br />
+              They sometime will charge a fee's for their service and if owner wish
+              not to buy their services they will post online for the world. <br />
+              <strong>Gray hat hackers</strong> are consider illegal due to them
+              hack the system before getting permission.
+            </p>
+          
+            <img src="img/gray.jpg" alt="Gray hat" class="blackimage">
+          </main> 
+
+
+<% include partials/footer %>
